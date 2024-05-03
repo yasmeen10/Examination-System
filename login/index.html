@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Login</title>
+    <style>
+        label,input{
+            display: block;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Log In</h1>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your E-mail"/>
+            <span id="emailError" class="error"></span>
+            <label for="password">Password:</label>
+            <input type="password"  name="password" id="password" placeholder="Enter your password"/>
+            <span id="passwordError" class="error"></span>
+            <input type="submit" value="Login" id="submit"/> 
+        </form>
+        <div class="signupSec">
+            <p>Don't have an account? </p>
+            <a href="../registeration/register.html">SignUp</a>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <title>Exam Preparation</title>
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+            background-image: url('../exam/background2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+        #quoteContainer {
+            text-align: center;
+            max-width: 600px;
+            margin: auto;
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #c7dbe9;
+        }
+
+        blockquote {
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            border-left: 4px solid #3498db;
+            padding-left: 20px;
+            color: #ecf0f1;
+        }
+
+        #startButton {
+            background-color: #3498db;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #startButton:hover {
+            background-color: #2980b9;
+        }
+
+        #quoteContainer.fade-out {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="quoteContainer">
+        <h1>Success Quotes</h1>
+        <blockquote>
+            "Success is not final, failure is not fatal: It is the courage to continue that counts." <br> - Winston S. Churchill
+        </blockquote>
+        <blockquote>
+            "Success is not in what you have, but who you are." <br> - Bo Bennett
+        </blockquote>
+        <blockquote>
+            "Success usually comes to those who are too busy to be looking for it." <br> - Henry David Thoreau
+        </blockquote>
+        <p>Be ready to start your exam journey.</p>
+        <button id="startButton" onclick="startExam()">Start Exam</button>
+    </div>
+
+    <script>
+        function startExam() {
+            const quoteContainer = document.getElementById('quoteContainer');
+            quoteContainer.classList.add('fade-out');
+
+           
+            setTimeout(() => {
+                location.replace("../exam/index.html");
+            }, 1000);
+        }
+
+       
+        setTimeout(() => {
+            startExam();
+        }, 30000);
+    </script>
+</body>
+
+</html>

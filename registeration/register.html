@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Now!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="registrationContainer">
+        <h1>Register Now</h1>
+        <!-- <h1 id="registerNowHeading">Register Now</h1> -->
+    <form id="registrationForm" action="get">
+        <label for="fname">First Name:</label>
+        <input class="fname" type="text" placeholder="Enter your First name" id="fname">
+        <span class="error" id="fnameError"></span>
+
+        <label for="lname">Last Name:</label>
+        <input class="lname" type="text" placeholder="Enter your Last Name" id="lname">
+        <span class="error" id="lnameError"></span>
+
+        <label for="email">E-mail:</label>
+        <input class="email" type="text" placeholder="Enter your E-mail" id="email">
+        <span class="error" id="emailError"></span>
+
+        <label for="pass">Password:</label>
+        <input class="pass" type="password" placeholder="Enter your Password" id="pass">
+        <span class="error" id="passError"></span>
+
+        <label for="pass2">Re-enter Password:</label>
+        <input class="pass2" type="password" placeholder="Re-enter Password" id="pass2">
+        <span class="error" id="pass2Error"></span>
+
+        <button type="button" onclick="validateForm()">Register</button>
+    </form>
+    <div class="loginSec">
+        <p>Already have account? </p>
+        <a href="../login/index.html">LogIn</a>
+    </div>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>

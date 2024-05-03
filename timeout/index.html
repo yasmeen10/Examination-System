@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Time Out</title>
+</head>
+<body>
+    <div class="timeoutMsg">
+        <div class="timeImg">
+            <img src="./time flies-cuate (1).svg"/>
+        </div>
+        <div class="msg"></div>
+    </div>
+    <script>
+        var fName = localStorage.getItem("firstName");
+        var msg = document.getElementsByClassName("msg")[0];
+        msg.textContent=`Sorry ${fName} the timeout!`
+    </script>
+</body>
+</html>

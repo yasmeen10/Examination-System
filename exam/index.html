@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Quiz</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    <div class="quiz-container">
+        <section class="questionsArea">
+            <div class="timer-container">
+                <span id="timer"></span>
+            </div>
+            <div class="questionsCount">
+                <div class="progress-container">
+                    <span class="progress-text"></span>
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <div class="count">
+                    <span class="countNum"></span>
+                </div>
+            </div>
+            <div class="question">
+                <div class="answers"></div>
+            </div>
+            <div class="controlBtns">
+                <button id="prevBtn" disabled>Previous</button>
+                <button id="flagBtn">Flag</button>
+                <button id="nextBtn">Next</button>
+            </div>
+
+
+            <button class="submitBtn" disabled>Submit</button>
+        </section>
+
+        <section class="flaggedQuestions">
+            <h3>Flagged Questions</h3>
+            <ul id="flaggedList"></ul>
+            <button id="unflagBtn">Unflag All</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
